@@ -28,7 +28,7 @@ class UploadActivity : AppCompatActivity() {
             insets
         }
 
-        binding.btnUpdateButton.setOnClickListener {
+        binding.btnUploadButton.setOnClickListener {
             val donoMoto = binding.edtDonoMoto.text.toString()
             val marcaMoto = binding.edtMarcaMoto.text.toString()
             val placaMoto = binding.edtPlacaMoto.text.toString()

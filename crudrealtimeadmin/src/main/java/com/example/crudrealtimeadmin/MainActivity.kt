@@ -31,5 +31,12 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        binding.btnUpdate.setOnClickListener {
+
+            val intent = Intent(this@MainActivity, UpdateActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
     }
 }
