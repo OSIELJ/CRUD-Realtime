@@ -7,7 +7,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.crudrealtimeadmin.databinding.ActivityMainBinding
 import com.example.crudrealtimeadmin.databinding.ActivityUploadBinding
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -28,7 +27,7 @@ class UploadActivity : AppCompatActivity() {
             insets
         }
 
-        binding.btnUploadButton.setOnClickListener {
+        binding.btnUpload.setOnClickListener {
             val donoMoto = binding.edtDonoMoto.text.toString()
             val marcaMoto = binding.edtMarcaMoto.text.toString()
             val placaMoto = binding.edtPlacaMoto.text.toString()

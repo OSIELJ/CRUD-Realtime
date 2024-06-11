@@ -25,7 +25,7 @@ class UpdateActivity : AppCompatActivity() {
             insets
         }
 
-        binding.btnUpdateButton.setOnClickListener {
+        binding.btnUpdate.setOnClickListener {
             val placaMoto = binding.edtPlacaMoto.text.toString()
             val nomeDonoAtualizado = binding.edtDonoMoto.text.toString()
             val marcaMotoAtualizado = binding.edtMarcaMoto.text.toString()
