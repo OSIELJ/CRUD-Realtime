@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:background="#e0ffff"
     android:layout_height="match_parent"
+    android:background="#e0ffff"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tv_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:text="Info motos"
         android:textColor="@color/black"
         android:textSize="35sp"
@@ -25,74 +25,56 @@
         android:id="@+id/tv_paine_Admin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Painel do Admin"
-        android:textSize="25sp"
+        android:layout_marginTop="8dp"
+        android:text="Painel do Usuário"
+        android:textColor="@color/black"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@+id/tv_info" />
 
     <ImageView
         android:id="@+id/img_moto"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="32dp"
         app:layout_constraintTop_toBottomOf="@id/tv_paine_Admin"
-        app:srcCompat="@drawable/motocicleta"
-        tools:layout_editor_absoluteY="219dp" />
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.4"
+        app:srcCompat="@drawable/motocicleta" />
 
-
-    <Button
-        android:id="@+id/btn_mainUpload"
+    <EditText
+        android:id="@+id/edt_placaMoto"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="55dp"
-        android:layout_marginEnd="8dp"
-        android:backgroundTint="@color/black"
-        android:text="Criar"
-        android:textSize="18sp"
-        app:cornerRadius="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/lavender_border"
+        android:gravity="start|center_vertical"
+        android:hint="Placa da moto"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_moto" />
 
-
     <Button
-        android:id="@+id/btn_update"
+        android:id="@+id/btn_deleteButton"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:backgroundTint="@color/black"
-        android:text="Atualizar"
-        android:textSize="18sp"
-        app:cornerRadius="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_mainUpload" />
-
-
-    <Button
-        android:id="@+id/btn_delete"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="50dp"
         android:backgroundTint="@color/black"
         android:text="Deletar"
         android:textSize="18sp"
-        app:cornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_update" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_placaMoto" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
